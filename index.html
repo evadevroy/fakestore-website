@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plant Store</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="mystylestore.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>
+				<a href = "index.html">Store Home</a>
+			</li>
+			<li>
+				<a href = "about.html">About</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class = "mainbox">
+		<table>
+			<!--picture row-->
+			<tr>
+				<td>
+					<img class = "forsale" src = "https://images-na.ssl-images-amazon.com/images/I/516wzBuj4RL._AC_UL160_.jpg">
+				</td>
+				<td>
+					<img class = "forsale" src = "https://www.gardeningknowhow.com/wp-content/uploads/2020/11/young-coffee-tree-400x533.jpg">
+				</td>
+				<td>
+					<img class = "forsale" src = "https://media1.s-nbcnews.com/j/newscms/2021_07/3432670/the-sill-anthurium-pink-variant-small-balboa-cream-1440x-5fc7db953a572_6489d3a3c7733cc562bed6636987df36.fit-260w.jpg">
+				</td>
+				<td>
+					<img class = "forsale" src = "https://media2.s-nbcnews.com/j/newscms/2021_07/3450718/screen_shot_2021-02-17_at_1-10-15_pm_bf7f98c27f0532a2fe808a718b48b5fe.fit-260w.png">
+				</td>
+			</tr>
+
+			<!--caption row-->
+			<tr>
+				<td>
+					<h4>Cast Iron Plant</h4>
+					<p class = "price">$20</p>
+					<button class = "button" onclick = "buyCastIronPlant()">Add to Cart</button>
+				</td>
+				<td>
+					<h4>Coffee Plant</h4>
+					<p class = "price">$30</p>
+					<button class = "button" onclick = "buyCoffeePlant()">Add to Cart</button>
+				</td>
+				<td>
+					<h4>Pink Anthurium</h4>
+					<p class = "price">$35</p>
+					<button class = "button"  onclick = "buyPinkAnthurium()" >Add to Cart</button>
+				</td>
+				<td>
+					<h4>String of Pearls</h4>
+					<p class = "price">$25</p>
+					<button class = "button" onclick = "buyStringOfPearls()" >Add to Cart</button>
+				</td>
+
+			</tr>
+
+
+		</table>
+		<div id = "cart"></div>
+		<script>
+			var mycart = document.getElementById("cart");
+			function buyCastIronPlant() {
+				if (confirm('Buy Cast Iron Plant?')) {
+				mycart.innerHTML += "Cast Iron Plant<br>";
+			}
+		}
+		function buyCoffeePlant() {
+			if (confirm('Buy Coffee Plant?')) {
+				mycart.innerHTML += "Coffee Plant<br>";
+			}
+		}
+		function buyPinkAnthurium() {
+			if (confirm('Buy Pink Anthurium?')) {
+				mycart.innerHTML += "Pink Anthurium<br>";
+			}
+		}
+		function buyStringOfPearls() {
+			if (confirm('Buy String of Pearls?')) {
+				mycart.innerHTML += "String of Pearls<br>";
+			}
+		}
+
+	</script>
+
+</br>
+
+	<h4>My Cart</h4>
+
+	</div>
+
+</body>
+</html> 

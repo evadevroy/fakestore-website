@@ -1,0 +1,80 @@
+body {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR23vuF9R1X70BEFPsqD_AdVEDZ_GlXv7HEkiBKG0NqPTEtEaGn8K4BxFI1OS2pWQ9N87w&usqp=CAU");
+	background-size: cover;
+	font-family: 'Bebas Neue', cursive;
+}
+
+nav {
+	display: block; /*important*/
+	margin: auto; /*centers it*/
+	width: 80%;
+	border: solid lightpink 5px;
+	margin-bottom: 20px; /*extra space
+	below*/
+	font-family: 'Kiwi Maru', serif;
+}
+
+ul {
+	list-style-type: none; /*remove 
+	bullet points*/
+	margin: 0;
+	padding:0;
+	background-color: pink;
+	text-align: center;
+	height: 70px;
+}
+
+li a {
+	display: inline;
+	padding: 20px;
+	float: left;
+	background-color: pink;
+	color: white;
+	font-size: 1.4em;
+	text-decoration: none;
+} 
+
+ li a:hover {
+	background-color: #dd3333;
+	color: pink;
+}
+
+.mainbox {
+	background-color: white;
+	margin: auto;
+	width: 80%;
+	opacity: 0.8;
+}
+
+.forsale {
+	width: 100%;
+}
+
+td {
+	width: 25%;
+	padding: 2%;
+	text-align: center;
+}
+tr {
+	width: 80%;
+}
+h4 {
+	text-align: center;
+	margin-top: -20px;
+	margin-bottom: -10px;
+}
+.price {
+	color: #dd3333;
+	text-align: center;
+}
+.button {
+	background-color: lightpink;
+	color: white;
+	padding: 10px;
+}
+
+.button:hover{
+	background-color: #dd3333;
+	color:white;
+	cursor: pointer;
+} 
